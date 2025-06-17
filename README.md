@@ -107,5 +107,44 @@
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  body {
+  background-color: blue;
+  
+}
+
+.hero {
+  height: 70vh;
+  background-color: blueviolet;
+  padding: 60px 0;
+}
+
+.animate-fadein {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+.animate-fadein.delay-1 { animation-delay: 0.5s; }
+.animate-fadein.delay-2 { animation-delay: 1s; }
+
+@keyframes fadeIn {
+  to { opacity: 1; transform: translateY(0); }
+  from { opacity: 0; transform: translateY(20px); }
+}
+
+.card-custom {
+  transition: all 0.3s ease-in-out;
+  border-radius: 15px;
+}
+.card-custom:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  transform: scale(1.03);
+  transition: transform 0.2s ease;
+}
+
+
 </body>
 </html>
+
